@@ -180,7 +180,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 4;
+$config['log_threshold'] = 0;
 
 /*
 |--------------------------------------------------------------------------
@@ -191,7 +191,7 @@ $config['log_threshold'] = 4;
 | application/logs/ folder. Use a full server path with trailing slash.
 |
 */
-$config['log_path'] = '/home/master/dar_logs';
+$config['log_path'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -328,8 +328,7 @@ $config['compress_output'] = FALSE;
 | regarding date handling.
 |
 */
-$config['time_reference'] = 'gmt';
-date_default_timezone_set('UTC');
+$config['time_reference'] = 'local';
 
 
 /*
